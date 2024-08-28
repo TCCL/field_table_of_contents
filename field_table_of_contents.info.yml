@@ -5,10 +5,10 @@ description: 'Provides a custom field type that renders a table of contents'
 package: 'TCCL Custom'
 
 type: module
-core_version_requirement: ^8.7.7 || ^9
+core_version_requirement: ^9 || ^10
 version: 1.0.1
 
 dependencies:
   - node
 
-php: 7.3
+php: 8.0
