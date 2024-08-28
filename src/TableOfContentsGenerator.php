@@ -148,6 +148,7 @@ class TableOfContentsGenerator {
     // any fields that were disabled.
     $fields = $entity->getFields();
     $storageId = "$type.$bundle.default";
+    /** @var \Drupal\Core\Entity\Display\EntityViewDisplayInterface $viewDisplay */
     $viewDisplay = $this->storage->load($storageId);
     if ($viewDisplay) {
       $fs = $viewDisplay->getComponents();
