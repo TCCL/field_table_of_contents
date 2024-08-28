@@ -8,7 +8,6 @@
 
 namespace Drupal\field_table_of_contents;
 
-use DOMDocument;
 use Drupal\Component\Utility\Html;
 use Drupal\Core\Entity\ContentEntityInterface;
 use Drupal\Core\Entity\EntityTypeManager;
@@ -242,7 +241,7 @@ class TableOfContentsGenerator {
 
       $idAttr = $node->attributes->getNamedItem('id');
       if (isset($idAttr)) {
-        $id = $idAttr->value;
+        $id = $idAttr->nodeValue;
       }
       else {
         $id = static::generateId($label);
