@@ -169,6 +169,7 @@ class TableOfContentsFieldFormatter extends FormatterBase {
     $parentEntity = $items->getEntity();
 
     while ($parentEntity instanceof ParagraphInterface) {
+      /** @var \Drupal\paragraphs\ParagraphInterface $parentEntity */
       $parentEntity = $parentEntity->getParentEntity();
     }
 
